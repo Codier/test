@@ -1,6 +1,6 @@
 import express from 'express';
 import graphqlHTTP from 'express-graphql';
-import mongoose from 'mongoose';
+// import mongoose from 'mongoose';
 
 import schema from './graphql';
 
@@ -14,7 +14,7 @@ app.use('/graphql', graphqlHTTP(req => ({
 })));
 
 // Connect mongo database
-mongoose.connect('mongodb://mongo/graphql');
+// mongoose.connect('mongodb://mongo/graphql');
 
 // start server
 var server = app.listen(8080, () => {
